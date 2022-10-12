@@ -13,14 +13,25 @@
     {{ else }}
       {{ .Site.Data.settings.seoMetaTags | safeHTML }}
     {{ end }}
+
+    <style>
+      .container__sidebar{
+        background-color: white;
+      }
+      .link-ofertas{
+        font-size: 0px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="container__sidebar">
         <div class="sidebar">
           <h6 class="sidebar__title">
-            <img src="https://www.datocms-assets.com/82529/1665560051-logo-ofertas-today-vertical.webp" alt="Ofertas.today">
-            <a href="/">{{ .Site.Data.settings.name }}</a>
+            <a href="/" class="link-ofertas">
+              <img src="https://www.datocms-assets.com/82529/1665560051-logo-ofertas-today-vertical.webp" alt="Ofertas.today">
+              {{ .Site.Data.settings.name }}
+            </a>
           </h6>
 
           <div class="sidebar__intro">
