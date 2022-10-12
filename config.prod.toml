@@ -11,6 +11,6 @@ Paginate = 5
   url = "/"
 
 # datocms:start
-title = "Creative Inc."
-languageCode = "en"
+title = "Ofertas.Today"
+languageCode = "pt-br"
 # datocms:end
